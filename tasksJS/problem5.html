@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var array = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
+        function fromListToObject(arr) {
+            var newObject = {};
+            for (var i = 0; i < arr.length; i++) {
+                var car=arr[i];
+                newObject[car[0]] = car[1];
+            }
+            return newObject;
+        }
+        var obj = fromListToObject(array);
+        console.log(obj);
+    </script>
+</body>
+
+</html>
